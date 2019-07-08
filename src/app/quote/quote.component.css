@@ -1,11 +1,13 @@
  h1 {
         color:  rgb(250, 125, 8);
         text-shadow: 0 0 3px rgb(0, 0, 0);
-        margin-top: 3%;    
+        margin-top: 3%;
+        font-family: 'Special Elite', cursive;    
     }
-h3 {
+h2 {
         color:  rgb(250, 125, 8);
         text-shadow: 0 0 3px rgb(0, 0, 0); 
+        font-family: 'Special Elite', cursive;
     }
   
   .intro {
