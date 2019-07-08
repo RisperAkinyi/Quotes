@@ -20,37 +20,37 @@ export class QuoteComponent implements OnInit {
   quotes = [
     new Quotes(
       1,
-      'Walt Disney',
-      'The way to get started is to quit talking and to start doing.',
-      'Arnold',
-      new Date(2019, 2, 10),
+      'Rainer Maria Rilke',
+      'The only journey is the journey within.',
+      'Natty',
+      new Date(2019, 2, 8),
       0,
       0
     ),
     new Quotes(
       2,
-      'Will Rogers',
-      'Do not let yesterday take too much of today.',
-      'Arnold',
-      new Date(2019, 2, 24),
+      'Risper Akinyi',
+      'Some of the most comforting words in the universe are ‘me too.’ That moment when you find out that your struggle is also someone else’s struggle, that you’re not alone, and that others have been down the same road.',
+      'Nobat',
+      new Date(2019, 1, 13),
       0,
       0
     ),
     new Quotes(
       3,
-      'Winston Churchill',
-      'The pessimist sees difficulty in every opportunity. The optimist sees opportunitty in every difficulty.',
-      'Arnold',
-      new Date(2019, 3, 6),
+      'Fred Rodgers',
+      'The pessimist sees difficulty in every opportunity. The optimist sees opportunitty in every difficulty.Anything that’s human is mentionable, and anything that is mentionable can be more manageable. When we can talk about our feelings, they become less overwhelming, less upsetting, and less scary.',
+      'Orissy',
+      new Date(2018, 11, 3),
       0,
       0
     ),
     new Quotes(
       4,
       'Unknown',
-      'You learn more from failure than from success. Do not let it stop you. Failure builds character.',
-      'Arnold',
-      new Date(2019, 5, 9),
+      'The strongest people are those who win battles we know nothing about.',
+      'Talam',
+      new Date(2018, 5, 9),
       0,
       0
     ),
