@@ -1,1 +1,62 @@
-<p>quote works!</p>
+<h1 class="text-center">Inspirational and motivational Quotes about Success and life</h1>
+<section class="intro container ">
+  <div>
+
+    <p>Inspirational quotes and motivational sayings have an amazing ability to change the way we feel
+      about life. This
+      is
+      why i find them so interesting and crucial on our paths to success. <br> So whats the secret? <br>The way you
+      think
+      and feel about yourself, including your beliefs and expectations about what is possibles for you, determines
+      everything that happens to you.When you change the quality of your thinking, you change the quality of your life
+    </p>
+
+  </div>
+  <div class="new-quote">
+    <app-quote-form (quoteUpdate)='addQuote($event)'></app-quote-form>
+  </div>
+</section>
+
+<section class="quote-section">
+  <h3> MOTIVATIONAL QUOTES</h3>
+  <div class="high-cont" *ngFor="let quote of quotes; let i = index; let j = index;">
+
+    <div class="high-quote" appHighestVote *ngIf='quote.upVote == highest() && highest() > 0'>
+      <h5>Highest as voted by you</h5>
+      <p></p><br>
+      <p class="date">{{quote.setDate | date}}</p>
+      <p class="quote-desc">{{quote.description}}<br> <span>...{{quote.author}}</span></p>
+      <div class="votes">
+        <span (click)='upVoter(i);highest();'>
+          <i class="far fa-thumbs-up"></i>Up<span>{{quote.upVote}}</span>
+        </span>
+        <span (click)='dnVoter(i)'>
+          <i class="far fa-thumbs-down"></i>Dn<span class="dn">{{quote.dnVote}}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="quotes-cont">
+    <div class="quotes" *ngFor="let quote of quotes; let i = index;let j = index;">
+      <p></p><br>
+      <p class="date">{{quote.setDate | date}}</p>
+      <p class="quote-desc">{{quote.description}}<br> <span>...{{quote.author}}</span></p>
+      <!-- App quote details -->
+      <app-quote-details *ngIf='quote.showDescription' [quote]='quote' [showDesc]='showDesc(i)'
+        (quoteDelete)='deleteQuote($event, i)'></app-quote-details>
+      <!-- Votes -->
+      <div class="votes">
+        <span (click)='upVoter(i);highest();'>
+          <i class="far fa-thumbs-up"></i>Up<span>{{quote.upVote}}</span>
+        </span>
+        <span (click)='dnVoter(i)'>
+          <i class="far fa-thumbs-down"></i>Dn<span class="dn">{{quote.dnVote}}</span>
+        </span>
+      </div>
+      <div *ngIf='quote.showBtn'>
+        <button (click)='showDesc(i)'>Description</button>
+      </div>
+    </div>
+  </div>
+</section>
+
