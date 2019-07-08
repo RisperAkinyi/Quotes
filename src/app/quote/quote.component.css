@@ -1,42 +1,36 @@
-h1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px white;
-    background: rgba(0, 0, 0, 0.4);
-  }
+ h1 {
+        color:  rgb(250, 125, 8);
+        text-shadow: 0 0 3px rgb(0, 0, 0);
+        margin-top: 3%;    
+    }
+h3 {
+        color:  rgb(250, 125, 8);
+        text-shadow: 0 0 3px rgb(0, 0, 0); 
+    }
   
   .intro {
     text-align: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5% 0;
-  }
-  
-  .intro div {
-    display: block;
-    color: black;
-    /* margin: 2% 0; */
-    padding: 10% 20px;
-    width: 700px;
-    max-width: 100;
-    background: white;
-    text-align: left;
+    padding: 5%;
   }
   
   .intro .new-quote {
-    width: 400px;
-    max-width: 100%;
+    width: 900px;
     padding: 20px 20px;
-    background: rgb(2, 143, 199);
+    background: rgb(250, 125, 8);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
   }
   
   
   .quote-section {
-    background: rgba(2, 143, 199, 0.9);
+    background: rgb(0,0,0);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 20px;
+    color: white;
   }
   
   .quotes-cont {
@@ -68,7 +62,7 @@ h1 {
   }
   
   .high-cont {
-    background: rgba(2, 143, 199, 0.9);
+    background: rgb(250, 125, 8);
     width: 100%;
   }
   

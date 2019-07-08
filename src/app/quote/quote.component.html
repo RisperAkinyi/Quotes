@@ -1,24 +1,13 @@
-<h1 class="text-center">Inspirational and motivational Quotes about Success and life</h1>
+<h1 class="text-center">Mental Health Quotes.</h1>
 <section class="intro container ">
-  <div>
 
-    <p>Inspirational quotes and motivational sayings have an amazing ability to change the way we feel
-      about life. This
-      is
-      why i find them so interesting and crucial on our paths to success. <br> So whats the secret? <br>The way you
-      think
-      and feel about yourself, including your beliefs and expectations about what is possibles for you, determines
-      everything that happens to you.When you change the quality of your thinking, you change the quality of your life
-    </p>
-
-  </div>
   <div class="new-quote">
     <app-quote-form (quoteUpdate)='addQuote($event)'></app-quote-form>
   </div>
 </section>
 
 <section class="quote-section">
-  <h3> MOTIVATIONAL QUOTES</h3>
+  <h3> NEW MENTAL HEALTH QUOTES BY YOU</h3>
   <div class="high-cont" *ngFor="let quote of quotes; let i = index; let j = index;">
 
     <div class="high-quote" appHighestVote *ngIf='quote.upVote == highest() && highest() > 0'>
