@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h3>Create A New Quote</h3>
     <form action="" #goalForm='ngForm' name="goalForm" (ngSubmit)="submit()" >
-      <p *ngIf="description.invalid ||author.invalid ||submittedBy.invalid " class="text-warning">Fill all the fields in order to submit</p>
+      <p *ngIf="description.invalid ||author.invalid ||submittedBy.invalid " class="text-warning">Be part of Mental Health Quotes conversation by filling this form</p>
   
       <div class="form-group">
         <label for="quote">Quote</label>
@@ -15,7 +15,7 @@
         <label for="quote">Submitted By</label>
         <input type="text" required placeholder="Enter Your name" #submittedBy='ngModel' class="form-control" name="submittedBy" [(ngModel)]='newQuote.submittedBy'>
       </div>
-      <button type="submit" [disabled]="description.invalid ||author.invalid ||submittedBy.invalid " class="btn-outline-dark">Create Quote</button>
+      <button type="submit" [disabled]="description.invalid ||author.invalid ||submittedBy.invalid " class="btn-outline-dark, btn btn-success">Create Quote!</button>
   
     </form>
   </div>
