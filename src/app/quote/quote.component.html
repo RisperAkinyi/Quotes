@@ -10,13 +10,13 @@
   <h2> -NEW MENTAL HEALTH QUOTES BY YOU-</h2>
   <div class="high-cont" *ngFor="let quote of quotes; let i = index; let j = index;">
 
-    <div class="high-quote" appHighestVote *ngIf='quote.upVote == highest() && highest() > 0'>
+    <div class="high-quote" appHighestVote *ngIf='quote.upVote > 0'>
       <h5>Highest as voted by you!</h5>
       <p></p><br>
       <p class="date">{{quote.setDate | date}}</p>
       <p class="quote-desc">{{quote.description}}<br> <span>...{{quote.author}}</span></p>
       <div class="votes">
-        <span (click)='upVoter(i);highest();'>
+        <span (click)='upVoter(i)'>
           <i class="far fa-thumbs-up"></i>Up<span>{{quote.upVote}}</span>
         </span>
         <span (click)='dnVoter(i)'>
@@ -35,7 +35,7 @@
         (quoteDelete)='deleteQuote($event, i)'></app-quote-details>
       <!-- Votes -->
       <div class="votes">
-        <span (click)='upVoter(i);highest();'>
+        <span (click)='upVoter(i)'>
           <i class="far fa-thumbs-up"></i>Up<span>{{quote.upVote}}</span>
         </span>
         <span (click)='dnVoter(i)'>
