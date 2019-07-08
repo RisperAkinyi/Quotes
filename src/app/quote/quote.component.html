@@ -11,7 +11,7 @@
   <div class="high-cont" *ngFor="let quote of quotes; let i = index; let j = index;">
 
     <div class="high-quote" appHighestVote *ngIf='quote.upVote == highest() && highest() > 0'>
-      <h5>Highest as voted by you</h5>
+      <h5>Highest as voted by you!</h5>
       <p></p><br>
       <p class="date">{{quote.setDate | date}}</p>
       <p class="quote-desc">{{quote.description}}<br> <span>...{{quote.author}}</span></p>
@@ -20,7 +20,7 @@
           <i class="far fa-thumbs-up"></i>Up<span>{{quote.upVote}}</span>
         </span>
         <span (click)='dnVoter(i)'>
-          <i class="far fa-thumbs-down"></i>Dn<span class="dn">{{quote.dnVote}}</span>
+          <i class="far fa-thumbs-down"></i>Down<span class="dn">{{quote.dnVote}}</span>
         </span>
       </div>
     </div>
@@ -39,7 +39,7 @@
           <i class="far fa-thumbs-up"></i>Up<span>{{quote.upVote}}</span>
         </span>
         <span (click)='dnVoter(i)'>
-          <i class="far fa-thumbs-down"></i>Dn<span class="dn">{{quote.dnVote}}</span>
+          <i class="far fa-thumbs-down"></i>Down<span class="dn">{{quote.dnVote}}</span>
         </span>
       </div>
       <div *ngIf='quote.showBtn'>
