@@ -10,7 +10,7 @@
   <h2> -NEW MENTAL HEALTH QUOTES BY YOU-</h2>
   <div class="high-cont" *ngFor="let quote of quotes; let i = index; let j = index;">
 
-    <div class="high-quote" appHighestVote *ngIf='quote.upVote == highest() && highest() > 0'>
+    <div class="high-quote" appHighestVote *ngIf='quotes.upVote == highest() && highest() > 0'>
       <h5>Highest as voted by you!</h5>
       <p></p><br>
       <p class="date">{{quote.setDate | date}}</p>
