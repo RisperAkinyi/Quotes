@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-// import { Quotes } from '/quote';
+import { Quotes } from '../quotes';
 import { QuoteFormComponent } from '../quote-form/quote-form.component';
 
 
@@ -110,4 +110,3 @@ export class QuoteComponent implements OnInit {
   }
 
 }
-

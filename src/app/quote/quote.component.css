@@ -1,0 +1,181 @@
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px white;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .intro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5% 0;
+  }
+  
+  .intro div {
+    display: block;
+    color: black;
+    /* margin: 2% 0; */
+    padding: 10% 20px;
+    width: 700px;
+    max-width: 100;
+    background: white;
+    text-align: left;
+  }
+  
+  .intro .new-quote {
+    width: 400px;
+    max-width: 100%;
+    padding: 20px 20px;
+    background: rgb(2, 143, 199);
+  }
+  
+  
+  .quote-section {
+    background: rgba(2, 143, 199, 0.9);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  
+  .quotes-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .quotes {
+    padding: 10px;
+    margin: 15px 0;
+    width: 70%;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    position: relative;
+    
+  }
+  
+  .quotes button {
+    margin-top: 10px;
+    padding: 1px 10px;
+  }
+  
+  .quote-desc span {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9em;
+  
+  }
+  
+  .high-cont {
+    background: rgba(2, 143, 199, 0.9);
+    width: 100%;
+  }
+  
+  .high-quote {
+    padding: 20px 10px;
+    margin: 40px 0;
+    width: 70%;
+    box-shadow: 0 0 40px rgb(255, 207, 144);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 1;
+    animation: show 1.2s linear 1;
+  }
+  @keyframes show{
+    0%{opacity: 0;transform: translateY(100%) translateX(-50%) scale(0.9);}
+    30%{opacity: 1;}
+    50%{opacity: 0;transform: translateY(-10%)  translate(-50%) scale(0.9);}
+    90%{opacity: 1;} 
+  }
+  
+  .high-quote h5 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 7px;
+  }
+  
+  .high-quote .votes {
+    background: rgba(255, 255, 255, 0.459);
+    margin-top: 1px;
+    height: 35px;
+    padding: 5px 10px;
+  
+  }
+  
+  .date {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 0.9em;
+  }
+  
+  .votes {
+    max-width: 200px;
+    height: 25px;
+    float: right;
+    z-index: 300;
+  }
+  
+  .votes>span {
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s ease;
+    margin-left: 5px;
+    padding: 2px 5px;
+  }
+  .votes>span:active{
+    box-shadow: 0 0 20px white;
+    transition: all 0s ease;
+    border-radius: 20px;
+  }
+  
+  .votes>span>span {
+    background: rgba(255, 255, 255, 0.781);
+    padding: 1px 4px;
+    border-radius: 20px;
+    margin-left: 5px;
+  }
+  
+  .votes>span .dn {
+    background: rgba(255, 0, 0, 0.884);
+    color: white;
+  }
+  
+  .votes i {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    transition: all 0.1s ease-out;
+  }
+  
+  .votes i:hover {
+    transform: scale(1.2);
+    box-shadow: 15px 15px 10px rgba(255, 255, 255, 0.527);
+  }
+  
+  .votes i:active {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+    transform: scale(1);
+  }
+  
+  /*---------------------------------------------------
+                MEDIA QUERIES
+  ---------------------------------------------------*/
+  @media only screen and (max-width: 500px) {
+    .quotes {
+      width: 100%;
+      /* background: red; */
+      box-shadow: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  
+    .high-quote {
+      width: 100%;
+    }
+  }
+  

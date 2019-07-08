@@ -1,0 +1,24 @@
+::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  input,
+  textarea {
+    background: transparent;
+    border-radius: 0px;
+    outline: none;
+  }
+  input:focus,
+  textarea:focus{
+    background: rgba(255,255,255,0.5);
+    border-radius: 0px;
+    color: black;
+  
+  }
+  button{
+    padding: 1px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  
